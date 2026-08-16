@@ -1074,7 +1074,8 @@ const wordReplacements = {
     "uhhhh": "amx",
     "uhm": "amx",
     "uhmm": "amx",
-    "uhmmm": "amx"
+    "uhmmm": "amx",
+    "followed": "amy"
 };
 
 
