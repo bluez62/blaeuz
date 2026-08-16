@@ -1057,7 +1057,24 @@ const wordReplacements = {
     "sad": "amj",
     "angry": "amk",
     "scared": "aml",
-    "tired": "amm"
+    "tired": "amm",
+    "whoever": "amn",
+    "its": "amo",
+    "into": "amp",
+    "upon": "amq",
+    "sorry": "amr",
+    "bye": "ams",
+    "words": "amt",
+    "things": "amu",
+    "years": "amv",
+    "times": "amw",
+    "uh": "amx",
+    "uhh": "amx",
+    "uhhh": "amx",
+    "uhhhh": "amx",
+    "uhm": "amx",
+    "uhmm": "amx",
+    "uhmmm": "amx"
 };
 
 
