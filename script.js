@@ -11,6 +11,7 @@ function getSequenceString(index) {
         result = String.fromCharCode(97 + (temp % base)) + result;
         temp = Math.floor(temp / base) - 1;
     }
+
     return result;
 }
 
@@ -58,7 +59,7 @@ function performTranslation(userInput, mode) {
                 ? substitution.charAt(0).toUpperCase() + substitution.slice(1) 
                 : substitution;
         }
-        return match; 
+        return match;
     });
 }
 
@@ -73,7 +74,7 @@ function updateTranslation() {
     if (!isDictionaryLoaded) return;
     const currentMode = modeSelect.value;
     const textToTranslate = inputArea.value;
-    outputDiv.textContent = performTranslation(textToTranslate, currentMode);
+    outputDiv.textContent = performTranslation(textToTranslate, currentMode).replaceAll('a', 'あ').replaceAll('i', 'い').replaceAll('u', 'う').replaceAll('e', 'え').replaceAll('o', 'お').replaceAll('n', 'ん').replaceAll('b', 'ㅂ').replaceAll('c', 'Ц').replaceAll('d', 'ㄉ').replaceAll('f', 'ƒ').replaceAll('g', 'Ґ').replaceAll('h', 'ㅎ').replaceAll('j', 'ㅈ').replaceAll('k', '𐤊').replaceAll('l', 'ㄹ').replaceAll('m', 'ㅁ').replaceAll('p', 'ㅍ').replaceAll('q', '𐤒').replaceAll('r', 'ら').replaceAll('s', 'ſ').replaceAll('t', 'ŧ').replaceAll('v', 'Վ').replaceAll('w', 'װ').replaceAll('x', 'Ξ').replaceAll('y', '¥').replaceAll('z', 'ぜ');
 }
 
 inputArea.addEventListener('input', updateTranslation);
